@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace Game
+namespace Base.Game
 {
     public class ZombieMap : MonoBehaviour
     {

@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using Base.Input;
+using UnityEngine;
 
-namespace Game
+namespace Base.Game
 {
     public class PlayerController : MonoBehaviour
     {

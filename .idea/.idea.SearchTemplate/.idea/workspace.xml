@@ -1,7 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="454a37b9-b065-4608-8eee-679af1a79d59" name="Default Changelist" comment="Init Commit">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility AI/ActionAI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility AI/ActionAI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/CloseToCover.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/CloseToCover.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/DistanceToEnemy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/DistanceToEnemy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/EnemyNotSee.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/EnemyNotSee.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/IsInCover.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/IsInCover.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility AI/ZombieAI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility AI/ZombieAI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SearchTemplate/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SearchTemplate/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SearchTemplate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SearchTemplate/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FollowCamera.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FollowCamera.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/BulletController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/BulletController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/LevelMap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/LevelMap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/PlayerController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/PlayerController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/ZombieComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/ZombieComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/ZombieMap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/ZombieMap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HitpointsView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HitpointsView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/KeyboardInput.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/KeyboardInput.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/PlayerInput.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/PlayerInput.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/SimpleBotInput.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/SimpleBotInput.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Search.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Search/AStarBot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Search/AStarBot.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Search/AStarFromGoogle.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Search/AStarFromGoogle.cs.meta" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AD3EAA08-78D9-4CBE-8E45-F9C494D71647/eb/b1076256/Plane.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility AI/IScorer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/IScorer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility AI/Actions/RunningAwayFromEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/DistanceToEnemyScorer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/EnemyNotSeeScorer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Base/HitpointsView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Base/FollowCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Base/Search/AStarFromGoogle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Base/Search/AStarBot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Base/Input/SimpleBotInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Base/Input/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Base/Input/KeyboardInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Base/Game/ZombieMap.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Base/Game/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Base/Game/LevelMap.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Base/Game/GameView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Base/Game/BulletController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/CloseToCoverScorer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/EnemyNotSee.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/DistanceToEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/CloseToCover.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Base/Game/ZombieComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/IsInCover.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility AI/Action.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility AI/ActionAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility AI/ZombieAI.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="20rBBjHBUl0YtNGUXLPeA29PFlf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -22,5 +124,45 @@
       </option>
       <method v="2" />
     </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="454a37b9-b065-4608-8eee-679af1a79d59" name="Default Changelist" comment="" />
+      <created>1636792696928</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636792696928</updated>
+      <workItem from="1636792702722" duration="7131000" />
+    </task>
+    <task id="LOCAL-00001" summary="Init Commit">
+      <created>1636792840727</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1636792840727</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Init Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init Commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="670" y="197" key="RiderGenerateDialog" timestamp="1636799304347">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="670" y="197" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1636799304347" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1636792857854">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1636792857854" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Game
+namespace Base.Game
 {
     public class ZombieComponent : MonoBehaviour
     {
@@ -16,9 +16,12 @@ namespace Game
 
         private int _currentPoint = 0;
         private Vector3 _initPosition;
+        
+        public bool IsInCover { get; private set; }
 
         private void Awake()
         {
+            IsInCover = false;
             _initPosition = transform.position;
         }
 

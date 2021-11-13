@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using UnityEngine;
 
-namespace Search
+namespace Base.Search
 {
     public static class AStarFromGoogle
     {

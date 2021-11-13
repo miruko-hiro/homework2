@@ -3,7 +3,7 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
-namespace Game
+namespace Base.Game
 {
     public class LevelMap : MonoBehaviour
     {

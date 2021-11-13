@@ -1,7 +1,7 @@
 using System.Linq;
 using UnityEngine;
 
-namespace Game
+namespace Base.Game
 {
     public class GameView : MonoBehaviour
     {

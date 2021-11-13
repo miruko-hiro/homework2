@@ -1,0 +1,16 @@
+{
+    "name": "UtilityAI",
+    "rootNamespace": "",
+    "references": [
+        "GUID:027a89e1c9b08e04cbb423d0a8cdd3ba"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

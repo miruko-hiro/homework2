@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Game
+namespace Base.Game
 {
 	public class BulletController : MonoBehaviour
 	{

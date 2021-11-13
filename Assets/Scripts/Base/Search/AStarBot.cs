@@ -1,8 +1,9 @@
 using System.Linq;
-using Game;
+using Base.Game;
+using Base.Input;
 using UnityEngine;
 
-namespace Search
+namespace Base.Search
 {
     public class AStarBot : PlayerInput
     {

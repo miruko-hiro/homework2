@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Input
+namespace Base.Input
 {
     public class KeyboardInput : PlayerInput
     {
