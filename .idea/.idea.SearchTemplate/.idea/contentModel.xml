@@ -22,12 +22,23 @@
               <e p="SimpleBotInput.cs" t="Include" />
             </e>
             <e p="Search" t="Include">
+              <e p="AIntelligence.cs" t="Include" />
               <e p="AStarBot.cs" t="Include" />
               <e p="AStarFromGoogle.cs" t="Include" />
+              <e p="Graph.cs" t="Include" />
             </e>
           </e>
-          <e p="Utility AI" t="Include">
-            <e p="ActionAI.cs" t="Include" />
+          <e p="UtilityAI" t="Include">
+            <e p="Actions" t="Include">
+              <e p="BaseAction.cs" t="Include" />
+              <e p="DodgingEnemy.cs" t="Include" />
+              <e p="EatGrass.cs" t="Include" />
+              <e p="HidingFromEnemy.cs" t="Include" />
+              <e p="RunningAwayFromEnemy.cs" t="Include" />
+            </e>
+            <e p="Score" t="Include">
+              <e p="ScoreKeeper.cs" t="Include" />
+            </e>
             <e p="Scorers" t="Include">
               <e p="CloseToCover.cs" t="Include" />
               <e p="DistanceToEnemy.cs" t="Include" />

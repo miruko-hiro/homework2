@@ -50,10 +50,10 @@ namespace Base.Game
             HitpointsView.PlayerName.text = PlayerName;
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
-            if (Hitpoints <= 0)
-                return;
+            // if (Hitpoints <= 0)
+            //     return;
             
             HitpointsView.SetValue(Hitpoints / HitpointsMax);
         
@@ -61,6 +61,7 @@ namespace Base.Game
                 return;
 
             var (moveDirection, viewDirection, shoot) = PlayerInput.CurrentInput();
+            
             ProcessShoot(shoot);
             Rigidbody.velocity = moveDirection.normalized * Speed;
             transform.rotation = viewDirection;

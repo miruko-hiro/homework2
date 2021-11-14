@@ -1,6 +1,6 @@
 ﻿using Base.Game;
 
-namespace Utility_AI.Scorers
+namespace UtilityAI.Scorers
 {
     public class IsInCover: IScorer
     {
@@ -11,9 +11,9 @@ namespace Utility_AI.Scorers
             _zombie = zombie;
         }
         
-        public int GetScore()
+        public float GetScore()
         {
-            return _zombie.IsInCover ? 0 : 50;
+            return _zombie.IsInCover ? 0f : 0.5f;
         }
     }
 }

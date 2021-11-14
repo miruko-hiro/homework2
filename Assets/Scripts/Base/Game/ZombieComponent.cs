@@ -1,9 +1,16 @@
+using Base.Input;
+using Base.Search;
 using UnityEngine;
 
 namespace Base.Game
 {
     public class ZombieComponent : MonoBehaviour
     {
+
+        [Space(10)] 
+        
+        [SerializeField] private AIntelligence ai; 
+        
         [SerializeField] private GameObject _aliveView;
 
         [SerializeField] private GameObject _diedView;
@@ -30,24 +37,25 @@ namespace Base.Game
             SetState(true);
         }
 
-        private void Update()
-        {
-            if (_deltaPath == null || _deltaPath.Length < 2)
-                return;
-
-            var direction = _initPosition + _deltaPath[_currentPoint] - transform.position;
-            _rigidbody.velocity = IsAlive ? direction.normalized * _speed : Vector3.zero;
-
-            if (direction.magnitude <= 0.1f)
-            {
-                _currentPoint = (_currentPoint + 1) % _deltaPath.Length;
-            }
-        }
+        // private void FixedUpdate()
+        // {
+        //         if (_deltaPath == null || _deltaPath.Length < 2)
+        //             return;
+        //
+        //         var direction = _initPosition + _deltaPath[_currentPoint] - transform.position;
+        //         _rigidbody.velocity = IsAlive ? direction.normalized * _speed : Vector3.zero;
+        //
+        //         if (direction.magnitude <= 0.1f)
+        //         {
+        //             _currentPoint = (_currentPoint + 1) % _deltaPath.Length;
+        //         }
+        // }
 
         public void SetState(bool alive)
         {
             _aliveView.SetActive(alive);
             _diedView.SetActive(!alive);
+            ai.IsEnable = alive;
         }
 
         public bool IsAlive => _aliveView.activeInHierarchy;

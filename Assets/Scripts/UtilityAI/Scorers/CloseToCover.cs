@@ -1,7 +1,7 @@
 ﻿using Base.Game;
 using UnityEngine;
 
-namespace Utility_AI.Scorers
+namespace UtilityAI.Scorers
 {
     public class CloseToCover: IScorer
     {
@@ -14,17 +14,17 @@ namespace Utility_AI.Scorers
             _transformOwn = transformOwn;
         }
 
-        public int GetScore()
+        public float GetScore()
         {
             foreach (var mapCoverPoint in _mapCover.Points)
             {
                 if (Vector3.Distance(_transformOwn.position, mapCoverPoint) < 50)
                 {
-                    return 50;
+                    return 0.5f;
                 }
             }
 
-            return 0;
+            return 0f;
         }
     }
 }
