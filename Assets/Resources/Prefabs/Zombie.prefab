@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131526549626236}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.008, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4754911354900822}
@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 4754911354900822}
   - component: {fileID: 54461488628131348}
   - component: {fileID: 7681659814906748126}
+  - component: {fileID: 1042926848}
   m_Layer: 16
   m_Name: Zombie
   m_TagString: Untagged
@@ -127,6 +128,9 @@ Transform:
   m_Children:
   - {fileID: 4765267308680172}
   - {fileID: 8103077935481280195}
+  - {fileID: 997242053966780572}
+  - {fileID: 7050953423937582665}
+  - {fileID: 4778362637029065514}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -158,11 +162,174 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce954f8ee64e45cb832586d939942063, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ai: {fileID: 1042926848}
   _aliveView: {fileID: 1131526549626236}
   _diedView: {fileID: 7750346275728890811}
-  _speed: 5
+--- !u!114 &1042926848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186256172198026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ba37f797bb74501896744edfcd24645, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateTime: 0.1
+--- !u!1 &1310268009301178477
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7050953423937582665}
+  - component: {fileID: 2085204521291499880}
+  - component: {fileID: 8501753419800329363}
+  m_Layer: 0
+  m_Name: Action Eat Grass
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7050953423937582665
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310268009301178477}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4754911354900822}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2085204521291499880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310268009301178477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 798878dfd89743ac8f11d2da818c080c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 0}
+  transformEnemy: {fileID: 0}
   _rigidbody: {fileID: 54461488628131348}
-  _deltaPath: []
+  deltaPath: []
+  speed: 1
+--- !u!114 &8501753419800329363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310268009301178477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8adcb04f5fa4ff48825f20cf3021dbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transformOwn: {fileID: 4754911354900822}
+  transformEnemy: {fileID: 0}
+  minDistance: 0
+  maxDistance: 15
+  closeScore: 0
+  farScore: 25
+--- !u!1 &4342269307481384464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4778362637029065514}
+  - component: {fileID: 5581349109795030944}
+  - component: {fileID: 3803111641260870172}
+  - component: {fileID: 879147191183442921}
+  m_Layer: 0
+  m_Name: Action Back To Starting Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4778362637029065514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4342269307481384464}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4754911354900822}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5581349109795030944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4342269307481384464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5cd7e7a32e04b569362b92274d9f07b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 0}
+  _rigidbody: {fileID: 54461488628131348}
+  speed: 9
+  initPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &3803111641260870172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4342269307481384464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8adcb04f5fa4ff48825f20cf3021dbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transformOwn: {fileID: 4754911354900822}
+  transformEnemy: {fileID: 0}
+  minDistance: 0
+  maxDistance: 20
+  closeScore: -30
+  farScore: 0
+--- !u!114 &879147191183442921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4342269307481384464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5915f96a93c44fe8b219779221931662, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transformOwn: {fileID: 4754911354900822}
+  staticPosition: {x: 0, y: 0, z: 0}
+  minDistance: 0
+  maxDistance: 20
+  closeScore: 0
+  farScore: 30
 --- !u!1 &7750346275728890811
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,3 +426,72 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &9220604357547245830
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 997242053966780572}
+  - component: {fileID: 6702958555923580528}
+  - component: {fileID: 51849642161997417}
+  m_Layer: 16
+  m_Name: Action Running Away From Enemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &997242053966780572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9220604357547245830}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4754911354900822}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6702958555923580528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9220604357547245830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3435e9f38b7c4e78af9edc9ed34d173a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 0}
+  transformEnemy: {fileID: 0}
+  _rigidbody: {fileID: 54461488628131348}
+  speed: 9
+  randomPointRadius: 1
+  additive: 4
+  gazeDistance: 4
+--- !u!114 &51849642161997417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9220604357547245830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8adcb04f5fa4ff48825f20cf3021dbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transformOwn: {fileID: 4754911354900822}
+  transformEnemy: {fileID: 0}
+  minDistance: 0
+  maxDistance: 20
+  closeScore: 100
+  farScore: 0

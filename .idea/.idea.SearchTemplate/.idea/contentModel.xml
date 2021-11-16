@@ -30,21 +30,18 @@
           </e>
           <e p="UtilityAI" t="Include">
             <e p="Actions" t="Include">
+              <e p="BackToStartingPosition.cs" t="Include" />
               <e p="BaseAction.cs" t="Include" />
-              <e p="DodgingEnemy.cs" t="Include" />
               <e p="EatGrass.cs" t="Include" />
-              <e p="HidingFromEnemy.cs" t="Include" />
               <e p="RunningAwayFromEnemy.cs" t="Include" />
             </e>
             <e p="Score" t="Include">
               <e p="ScoreKeeper.cs" t="Include" />
             </e>
             <e p="Scorers" t="Include">
-              <e p="CloseToCover.cs" t="Include" />
-              <e p="DistanceToEnemy.cs" t="Include" />
-              <e p="EnemyNotSee.cs" t="Include" />
-              <e p="IScorer.cs" t="Include" />
-              <e p="IsInCover.cs" t="Include" />
+              <e p="DistanceToDynamicPosition.cs" t="Include" />
+              <e p="DistanceToStaticPosition.cs" t="Include" />
+              <e p="Scorer.cs" t="Include" />
             </e>
             <e p="Utility AI.asmdef" t="Include" />
             <e p="ZombieAI.cs" t="Include" />

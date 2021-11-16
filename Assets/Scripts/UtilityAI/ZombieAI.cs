@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Base.Search;
@@ -10,7 +9,8 @@ namespace UtilityAI
 {
     public class ZombieAI: AIntelligence
     {
-        [SerializeField] private List<BaseAction> actions;
+        [SerializeField] private float updateTime = 0.1f;
+        private List<BaseAction> _actions;
 
         private bool _isEnable = true;
         public override bool IsEnable
@@ -24,6 +24,11 @@ namespace UtilityAI
             }
         }
 
+        private void Awake()
+        {
+            _actions = GetComponentsInChildren<BaseAction>().ToList();
+        }
+
         private void Start()
         {
             StartCoroutine(SelectActionAI());
@@ -31,20 +36,33 @@ namespace UtilityAI
 
         private IEnumerator SelectActionAI()
         {
-            BaseAction actionInProgress = actions.OrderBy(p => p.GetScores()).Last();
+            bool someoneIsActive;
+            // BaseAction actionInProgress = _actions.OrderBy(p => p.GetScores()).Last();
             while (_isEnable)
             {
-                yield return new WaitForSeconds(0.1f);
-                var biggestAction = actions.OrderBy(p => p.GetScores()).Last();
-                if (!biggestAction.Equals(actionInProgress))
+                yield return new WaitForSeconds(updateTime);
+                someoneIsActive = false;
+                // var biggestAction = _actions.OrderBy(p => p.GetScores()).Last();
+                // if (!biggestAction.Equals(actionInProgress))
+                // {
+                //     actionInProgress.Stop();
+                // }
+                // biggestAction.Play();
+                // actionInProgress = biggestAction;
+                
+                foreach (BaseAction action in _actions)
                 {
-                    actionInProgress.Stop();
+                    if (action.IsEnabled)
+                    {
+                        someoneIsActive = true;
+                        break;
+                    }
                 }
-                biggestAction.Play();
-                actionInProgress = biggestAction;
+                
+                if(!someoneIsActive) _actions.OrderBy(p => p.GetScores()).Last().Play();
             }
             
-            foreach (var action in actions)
+            foreach (var action in _actions)
             {
                 action.Stop();
             }

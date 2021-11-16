@@ -15,21 +15,21 @@ namespace Base.Game
 
         [SerializeField] private GameObject _diedView;
 
-        [SerializeField] private float _speed = 5f;
-
-        [SerializeField] private Rigidbody _rigidbody;
-
-        [SerializeField] private Vector3[] _deltaPath;
+        // [SerializeField] private float _speed = 5f;
+        //
+        // [SerializeField] private Rigidbody _rigidbody;
+        //
+        // [SerializeField] private Vector3[] _deltaPath;
 
         private int _currentPoint = 0;
-        private Vector3 _initPosition;
+        // private Vector3 _initPosition;
         
         public bool IsInCover { get; private set; }
 
         private void Awake()
         {
             IsInCover = false;
-            _initPosition = transform.position;
+            // _initPosition = transform.position;
         }
 
         private void OnEnable()

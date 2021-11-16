@@ -20,51 +20,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="454a37b9-b065-4608-8eee-679af1a79d59" name="Default Changelist" comment="Добавлен Utility AI">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Base/Search/AIntelligence.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Base/Search/AIntelligence.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Base/Search/Graph.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Base/Search/Graph.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/BaseAction.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/BaseAction.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/DodgingEnemy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/DodgingEnemy.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/EatGrass.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/EatGrass.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/HidingFromEnemy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/HidingFromEnemy.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/RunningAwayFromEnemy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/RunningAwayFromEnemy.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Score.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/ZombieAI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/BackToStartingPosition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/BackToStartingPosition.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToStaticPosition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToStaticPosition.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/Scorer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SearchTemplate/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SearchTemplate/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SearchTemplate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SearchTemplate/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Wall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Wall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Zombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Zombie.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Base.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Base/Base.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Game/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Base/Game/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Game/ZombieComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Base/Game/ZombieComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Search/AStarBot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Base/Search/AStarBot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility AI.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility AI/ActionAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Score/ScoreKeeper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility AI/ActionAI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Score/ScoreKeeper.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/CloseToCover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/CloseToCover.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/CloseToCover.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/CloseToCover.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/DistanceToEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/DistanceToEnemy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToEnemy.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/EnemyNotSee.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/EnemyNotSee.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/EnemyNotSee.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/EnemyNotSee.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/IScorer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/IScorer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/IScorer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/IScorer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/IsInCover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/IsInCover.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/IsInCover.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/IsInCover.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility AI/Utility AI.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Utility AI.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility AI/Utility AI.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Utility AI.asmdef.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility AI/ZombieAI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility AI/ZombieAI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/ZombieAI.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/BaseAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/BaseAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/DodgingEnemy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/DodgingEnemy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/EatGrass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/EatGrass.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/HidingFromEnemy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/HidingFromEnemy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/RunningAwayFromEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/RunningAwayFromEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Score/ScoreKeeper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Score/ScoreKeeper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/CloseToCover.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/CloseToCover.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToDynamicPosition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToEnemy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToDynamicPosition.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/EnemyNotSee.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/EnemyNotSee.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/IScorer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/IScorer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/Scorer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/IsInCover.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/IsInCover.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/ZombieAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/ZombieAI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,13 +69,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility AI/IScorer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/IScorer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/DistanceToEnemyScorer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility AI/Scorers/EnemyNotSeeScorer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Base/HitpointsView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Base/FollowCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Base/Input/SimpleBotInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Base/Input/PlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Base/Input/KeyboardInput.cs" />
@@ -118,24 +95,31 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/IAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/AI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Base/Search/AStarFromGoogle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Base/Game/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Base/Search/AStarBot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Base/Search/IAIntelligence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Base/Search/AIntelligence.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Score/ScoreKeeper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Base/Game/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Base/Game/ZombieComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Base/Search/Graph.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/BackToOwnPosition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToEnemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/IScorer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/CloseToCover.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/EnemyNotSee.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/IsInCover.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Score/ScoreKeeper.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/BaseAction.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/HidingFromEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/EnemyNotSee.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToStartingPosition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToDynamicPosition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToStaticPosition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/AScorer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/Scorer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Base/Search/Graph.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/DodgingEnemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/HidingFromEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/ZombieAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/BaseAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/BackToStartingPosition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/RunningAwayFromEnemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/EatGrass.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/ZombieAI.cs" />
       </list>
     </option>
   </component>
@@ -182,7 +166,9 @@
       <option name="presentableId" value="Default" />
       <updated>1636792696928</updated>
       <workItem from="1636792702722" duration="27820000" />
-      <workItem from="1636879865322" duration="21318000" />
+      <workItem from="1636879865322" duration="21724000" />
+      <workItem from="1636965068157" duration="16244000" />
+      <workItem from="1637044766032" duration="21278000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit">
       <created>1636792840727</created>
@@ -198,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636800885164</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Добавлено убегание зомби от игрока и его возвращение на точку ожидания">
+      <created>1636921738860</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1636921738860</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,22 +209,24 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Init Commit" />
     <MESSAGE value="Добавлен Utility AI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен Utility AI" />
+    <MESSAGE value="Добавлено убегание зомби от игрока и его возвращение на точку ожидания" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлено убегание зомби от игрока и его возвращение на точку ожидания" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="670" y="197" key="RiderGenerateDialog" timestamp="1636915368250">
+    <state x="670" y="197" key="RiderGenerateDialog" timestamp="1637065891782">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="670" y="197" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1636915368250" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1636800888269">
+    <state x="670" y="197" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1637065891781" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1636921742663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1636800888269" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1636921742663" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1636882075089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
