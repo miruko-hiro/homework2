@@ -3,6 +3,22 @@
   <component name="ContentModelStore">
     <e p="C:\Unity\SearchTemplate" t="IncludeRecursive">
       <e p="Assets" t="Include">
+        <e p="Scenes" t="Include">
+          <e p="LevelEditor" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Attributes" t="Include">
+                <e p="PrefabReferenceAttribute.cs" t="Include" />
+              </e>
+              <e p="Editor" t="Include">
+                <e p="LevelEditor.cs" t="Include" />
+                <e p="LevelEditorStyle.uss" t="Include" />
+                <e p="LevelEditorUI.uxml" t="Include" />
+              </e>
+              <e p="LevelEditor.asmdef" t="Include" />
+              <e p="LevelMapNew.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="Base" t="Include">
             <e p="Base.asmdef" t="Include" />
@@ -49,6 +65,7 @@
         </e>
       </e>
       <e p="Base.csproj" t="IncludeRecursive" />
+      <e p="LevelEditor.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="SearchTemplate.sln" t="IncludeFlat" />

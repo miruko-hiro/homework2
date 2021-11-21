@@ -632,7 +632,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerInput
       value: 
-      objectReference: {fileID: 980219011}
+      objectReference: {fileID: 980219005}
     - target: {fileID: 114579815703072108, guid: 9f3385ee456da431cbd6ef7d9adb68f6,
         type: 3}
       propertyPath: FollowCamera
@@ -4509,6 +4509,16 @@ PrefabInstance:
       propertyPath: transformEnemy
       value: 
       objectReference: {fileID: 980219009}
+    - target: {fileID: 662613948902324131, guid: 3c53f0a4e4dd44178b8c1c3117a4025c,
+        type: 3}
+      propertyPath: graph
+      value: 
+      objectReference: {fileID: 1434570161}
+    - target: {fileID: 662613948902324131, guid: 3c53f0a4e4dd44178b8c1c3117a4025c,
+        type: 3}
+      propertyPath: transformEnemy
+      value: 
+      objectReference: {fileID: 980219009}
     - target: {fileID: 879147191183442921, guid: 3c53f0a4e4dd44178b8c1c3117a4025c,
         type: 3}
       propertyPath: staticPosition.x
@@ -4575,6 +4585,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1434570161}
     - target: {fileID: 6702958555923580528, guid: 3c53f0a4e4dd44178b8c1c3117a4025c,
+        type: 3}
+      propertyPath: transformEnemy
+      value: 
+      objectReference: {fileID: 980219009}
+    - target: {fileID: 7794344982278223600, guid: 3c53f0a4e4dd44178b8c1c3117a4025c,
+        type: 3}
+      propertyPath: graph
+      value: 
+      objectReference: {fileID: 1434570161}
+    - target: {fileID: 7794344982278223600, guid: 3c53f0a4e4dd44178b8c1c3117a4025c,
         type: 3}
       propertyPath: transformEnemy
       value: 
@@ -5495,6 +5515,16 @@ PrefabInstance:
       propertyPath: transformEnemy
       value: 
       objectReference: {fileID: 980219009}
+    - target: {fileID: 662613948902324131, guid: 3c53f0a4e4dd44178b8c1c3117a4025c,
+        type: 3}
+      propertyPath: graph
+      value: 
+      objectReference: {fileID: 1434570161}
+    - target: {fileID: 662613948902324131, guid: 3c53f0a4e4dd44178b8c1c3117a4025c,
+        type: 3}
+      propertyPath: transformEnemy
+      value: 
+      objectReference: {fileID: 980219009}
     - target: {fileID: 879147191183442921, guid: 3c53f0a4e4dd44178b8c1c3117a4025c,
         type: 3}
       propertyPath: transformOwn
@@ -5566,6 +5596,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1434570161}
     - target: {fileID: 6702958555923580528, guid: 3c53f0a4e4dd44178b8c1c3117a4025c,
+        type: 3}
+      propertyPath: transformEnemy
+      value: 
+      objectReference: {fileID: 980219009}
+    - target: {fileID: 7794344982278223600, guid: 3c53f0a4e4dd44178b8c1c3117a4025c,
+        type: 3}
+      propertyPath: graph
+      value: 
+      objectReference: {fileID: 1434570161}
+    - target: {fileID: 7794344982278223600, guid: 3c53f0a4e4dd44178b8c1c3117a4025c,
         type: 3}
       propertyPath: transformEnemy
       value: 
@@ -6986,7 +7026,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1188642526}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1194503363 stripped
+--- !u!4 &1197257110 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4754911354900822, guid: 3c53f0a4e4dd44178b8c1c3117a4025c,
     type: 3}
@@ -7709,7 +7749,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1095746634}
-  - {fileID: 1194503363}
+  - {fileID: 1197257110}
   - {fileID: 1799268648}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -9299,6 +9339,16 @@ PrefabInstance:
       propertyPath: transformEnemy
       value: 
       objectReference: {fileID: 980219009}
+    - target: {fileID: 662613948902324131, guid: 3c53f0a4e4dd44178b8c1c3117a4025c,
+        type: 3}
+      propertyPath: graph
+      value: 
+      objectReference: {fileID: 1434570161}
+    - target: {fileID: 662613948902324131, guid: 3c53f0a4e4dd44178b8c1c3117a4025c,
+        type: 3}
+      propertyPath: transformEnemy
+      value: 
+      objectReference: {fileID: 980219009}
     - target: {fileID: 879147191183442921, guid: 3c53f0a4e4dd44178b8c1c3117a4025c,
         type: 3}
       propertyPath: staticPosition.x
@@ -9375,6 +9425,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1434570161}
     - target: {fileID: 6702958555923580528, guid: 3c53f0a4e4dd44178b8c1c3117a4025c,
+        type: 3}
+      propertyPath: transformEnemy
+      value: 
+      objectReference: {fileID: 980219009}
+    - target: {fileID: 7794344982278223600, guid: 3c53f0a4e4dd44178b8c1c3117a4025c,
+        type: 3}
+      propertyPath: graph
+      value: 
+      objectReference: {fileID: 1434570161}
+    - target: {fileID: 7794344982278223600, guid: 3c53f0a4e4dd44178b8c1c3117a4025c,
         type: 3}
       propertyPath: transformEnemy
       value: 

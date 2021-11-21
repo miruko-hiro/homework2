@@ -222,8 +222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 798878dfd89743ac8f11d2da818c080c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graph: {fileID: 0}
-  transformEnemy: {fileID: 0}
   _rigidbody: {fileID: 54461488628131348}
   deltaPath: []
   speed: 1
@@ -435,7 +433,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 997242053966780572}
-  - component: {fileID: 6702958555923580528}
+  - component: {fileID: 7794344982278223600}
   - component: {fileID: 51849642161997417}
   m_Layer: 16
   m_Name: Action Running Away From Enemy
@@ -458,7 +456,7 @@ Transform:
   m_Father: {fileID: 4754911354900822}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6702958555923580528
+--- !u!114 &7794344982278223600
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
