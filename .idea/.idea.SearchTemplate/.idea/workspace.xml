@@ -19,40 +19,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="454a37b9-b065-4608-8eee-679af1a79d59" name="Default Changelist" comment="Добавлен Utility AI">
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Wall2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Wall2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/LevelEditor.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/LevelEditor.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Attributes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Attributes/PrefabReferenceAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Attributes/PrefabReferenceAttribute.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/LevelEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/LevelEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/LevelEditorStyle.uss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/LevelEditorStyle.uss.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/LevelEditorUI.uxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/LevelEditorUI.uxml.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/LevelEditor.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/LevelEditor.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/LevelMapNew.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/LevelMapNew.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UIElements.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/Unity.Cloud.Collaborate.Components.ChangeListEntries.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/Unity.Cloud.Collaborate.Components.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/Unity.Cloud.Collaborate.Views.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.PackageManager.UI.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.UIElements.Debugger.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEditor.UIElements.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UIElementsSchema/UnityEngine.UIElements.xsd" afterDir="false" />
+    <list default="true" id="454a37b9-b065-4608-8eee-679af1a79d59" name="Default Changelist" comment="Добавлено окно LevelEditor">
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/FileStorageBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/FileStorageBase.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/GameData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/GameData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/StorageBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/StorageBase.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/Surrogates.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/Surrogates/Vector3SerializationSurrogate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/Surrogates/Vector3SerializationSurrogate.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SearchTemplate/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SearchTemplate/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SearchTemplate/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SearchTemplate/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SearchTemplate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SearchTemplate/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Zombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Zombie.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/LevelEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/LevelEditor.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,25 +60,16 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy@1.11.2/Editor/Collaborate/Common/SerializableDictionary.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AD3EAA08-78D9-4CBE-8E45-F9C494D71647/c3/f2fea8e0/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AD3EAA08-78D9-4CBE-8E45-F9C494D71647/19/1670f7e6/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Unity/SearchTemplate/Assets/Scenes/Game.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DA6AB582-61CA-4BF8-8D22-45FA0B5E29FF/8f/de3608ea/Physics.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Unity/SearchTemplate/Assets/Resources/Prefabs/Zombie.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/83A38F53-97D9-4E36-A22E-FA3369C82390/6f/36dc18cd/EditorGUIUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AD3EAA08-78D9-4CBE-8E45-F9C494D71647/c3/82d523c9/Vector2Int.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Unity/SearchTemplate/Assets/Resources/Prefabs/Zombie.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/00A477ED-1ABF-4030-BE64-6C3244BD3667/06/645ebd4e/GUILayout.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Unity/SearchTemplate/Assets/Resources/Prefabs/Zombie.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/83A38F53-97D9-4E36-A22E-FA3369C82390/7c/36b8c60f/PrefabUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2A5A170A-AFDC-4E62-AE42-6239EAA657AF/3a/330933ab/NavMeshAgent.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility AI/Actions/ScoreKeeper.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility AI/Score/ScoreKeeper.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility AI/Actions/IAction.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility AI/Actions/RunningAwayFromEnemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility AI/ZombieAI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility AI/AI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/IAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/AI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Base/Search/AStarFromGoogle.cs" />
@@ -143,6 +114,12 @@
         <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/PrefabReferenceAttributeEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/LevelEditorUI.uxml" />
         <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/LevelEditorStyle.uss" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/Surrogates/Vector3SerializationSurrogate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/FileStorage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/Storage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/StorageBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/GameData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/FileStorageBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/LevelEditor.cs" />
       </list>
     </option>
@@ -196,7 +173,8 @@
       <workItem from="1637090287497" duration="2687000" />
       <workItem from="1637093138259" duration="252000" />
       <workItem from="1637247288356" duration="674000" />
-      <workItem from="1637487158224" duration="22323000" />
+      <workItem from="1637487158224" duration="22372000" />
+      <workItem from="1637567971315" duration="8633000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit">
       <created>1636792840727</created>
@@ -226,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637068695253</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Добавлено окно LevelEditor">
+      <created>1637522783773</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1637522783773</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,17 +237,18 @@
     <MESSAGE value="Добавлен Utility AI" />
     <MESSAGE value="Добавлено убегание зомби от игрока и его возвращение на точку ожидания" />
     <MESSAGE value="Реализовано действие: убегание от врага, возращение на точку спавна и ожидание действия" />
-    <option name="LAST_COMMIT_MESSAGE" value="Реализовано действие: убегание от врага, возращение на точку спавна и ожидание действия" />
+    <MESSAGE value="Добавлено окно LevelEditor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлено окно LevelEditor" />
   </component>
   <component name="WindowStateProjectService">
     <state x="670" y="197" key="RiderGenerateDialog" timestamp="1637506487021">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="670" y="197" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1637506487021" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1637068702162">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1637522788687">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1637068702162" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1637522788687" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1637487501759">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -271,9 +257,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1636882075089" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1637515238816">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1637571385447">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1637515238816" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1637571385447" />
   </component>
 </project>

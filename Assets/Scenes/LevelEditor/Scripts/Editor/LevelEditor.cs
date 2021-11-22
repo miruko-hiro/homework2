@@ -1,6 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
+using Scenes.LevelEditor.Scripts.Storage;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -10,11 +10,13 @@ namespace Scenes.LevelEditor.Scripts.Editor
 {
     public class LevelEditor : EditorWindow
     {
+	    private GameObject _parent;
 	    private Transform _transformParent;
 	    private string _layerName = "Default";
 	    private string _prefabName = "";
 	    private string _pathPrefab = "";
 	    private Vector3 _position = Vector3.zero;
+	    private StorageBase _fileStorage;
 
 	    [MenuItem("Window/Level Editor")]
         private static void ShowWindow()
@@ -36,17 +38,28 @@ namespace Scenes.LevelEditor.Scripts.Editor
 		        AssetDatabase.LoadAssetAtPath<StyleSheet>(
 			        "Assets/Scenes/LevelEditor/Scripts/Editor/LevelEditorStyle.uss");
 	        rootVisualElement.styleSheets.Add(styleSheet);
+
+	        var folderPath = "Assets/Scenes/LevelEditor/Scripts/Editor";
+	        var fileName = "Level.data";
+	        _fileStorage = new FileStorage(folderPath, fileName);
         }
 
         private void OnGUI()
         {
-	        GUILayout.Label("Create New Game Object", EditorStyles.boldLabel);
+	        GUILayout.Label("Create an Instance of Prefab", EditorStyles.boldLabel);
 
 	        DrawParentGameObject();
             DrawSelectorLayers();
             DrawSelectorPrefabs();
             DrawPosition();
             DrawButtonForAddingGameObject();
+            
+            EditorGUILayout.Space(20f);
+            GUILayout.Label("Save Prefabs Positions From Parent", EditorStyles.boldLabel);
+            DrawButtonForSavePrefabPositions();
+            EditorGUILayout.Space(20f);
+            GUILayout.Label("Load Prefabs Into Parent", EditorStyles.boldLabel);
+            DrawButtonForLoadPrefabPositions();
         }
         
         private void DrawParentGameObject()
@@ -55,9 +68,23 @@ namespace Scenes.LevelEditor.Scripts.Editor
 	        EditorGUILayout.BeginHorizontal();	
 	        EditorGUILayout.PrefixLabel(new GUIContent("Parent"));
 
-	        _transformParent = (Transform) EditorGUILayout.ObjectField(_transformParent, typeof(Transform), true);
-			
+	        _parent = (GameObject) EditorGUILayout.ObjectField(_parent, typeof(GameObject), true);
+
 	        EditorGUILayout.EndHorizontal();	
+
+	        if (_parent == null)
+	        {
+		        WarningMessageBox();
+		        _transformParent = null;
+	        }
+	        else
+		        _transformParent = _parent.transform;
+        }
+
+        private void WarningMessageBox()
+        {
+	        EditorGUILayout.Space();
+	        EditorGUILayout.HelpBox("Without a parent selected, you will not be able to use adding a prefab to the scene, saving and loading.", MessageType.Warning);
         }
         
         private void DrawSelectorLayers()
@@ -75,7 +102,6 @@ namespace Scenes.LevelEditor.Scripts.Editor
 			        layerNames.Add(layer);
 		        }
 	        }
-	        
 
 	        var layerNameSelected = _layerName;
 	        var classNameSelectedIndex = layerNames.IndexOf(layerNameSelected);
@@ -146,21 +172,67 @@ namespace Scenes.LevelEditor.Scripts.Editor
 		}
 
 		private void DrawButtonForAddingGameObject() {
-			EditorGUILayout.Space(30f);
+			EditorGUILayout.Space(20f);
 			if (GUILayout.Button("Add Prefab To Scene", GUILayout.Height(30f))) {
-				if(_pathPrefab.Length < 0) return;
+				if(_pathPrefab.Length < 0 || _parent == null) return;
 				
 				Object o = AssetDatabase.LoadMainAssetAtPath(_pathPrefab);
 				GameObject go;
 				try {
 					go = (GameObject) o;
-					if (_transformParent == null)
-						Instantiate(go, _position, Quaternion.identity);
-					else
-						Instantiate(go, _position, Quaternion.identity, _transformParent);
-					
+					GameObject newGo = (GameObject) PrefabUtility.InstantiatePrefab(go);
+					if (_transformParent != null)
+						newGo.transform.parent = _transformParent;
+					newGo.transform.position = _position;
+
 				} catch {
 					Debug.Log( "For some reason, prefab " + _pathPrefab + " won't cast to GameObject" );
+				}
+			}
+		}
+
+		private void DrawButtonForSavePrefabPositions()
+		{
+			EditorGUILayout.Space(20f);
+			if (GUILayout.Button("Save prefabs positions", GUILayout.Height(30f))) {
+				if(_parent == null) return;
+
+				_fileStorage.Clear();
+				
+				var childCount = _parent.transform.childCount;
+				for (int i = 0; i < childCount; i++)
+				{
+					var child = _parent.transform.GetChild(i);
+					string path = AssetDatabase.GetAssetPath(PrefabUtility.GetCorrespondingObjectFromSource(child.gameObject));
+					if(path.Length <= 0) continue;
+					path = JsonUtility.ToJson((i, path));
+					_fileStorage.Set(path, child.position);
+				}
+				
+				_fileStorage.Save();
+			}
+		}
+
+		private void DrawButtonForLoadPrefabPositions()
+		{
+			EditorGUILayout.Space(20f);
+			if (GUILayout.Button("Load prefabs", GUILayout.Height(30f))) {
+				if(_parent == null) return;
+
+				_fileStorage.Load();
+				foreach (var pair in _fileStorage.Data.DataMap)
+				{ 
+					var (i, path) = JsonUtility.FromJson<(int, string)>(pair.Key);
+					Object o = AssetDatabase.LoadMainAssetAtPath(path);
+					GameObject go;
+					try {
+						go = (GameObject) o;
+						var newGo = (GameObject) PrefabUtility.InstantiatePrefab(go);
+						newGo.transform.parent = _transformParent;
+						newGo.transform.position = (Vector3) pair.Value;
+					} catch {
+						Debug.Log( "For some reason, prefab " + path + " won't cast to GameObject" );
+					}
 				}
 			}
 		}

@@ -16,6 +16,14 @@
               </e>
               <e p="LevelEditor.asmdef" t="Include" />
               <e p="LevelMapNew.cs" t="Include" />
+              <e p="Storage" t="Include">
+                <e p="FileStorageBase.cs" t="Include" />
+                <e p="GameData.cs" t="Include" />
+                <e p="StorageBase.cs" t="Include" />
+                <e p="Surrogates" t="Include">
+                  <e p="Vector3SerializationSurrogate.cs" t="Include" />
+                </e>
+              </e>
             </e>
           </e>
         </e>
