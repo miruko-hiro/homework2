@@ -71,6 +71,11 @@
             <e p="ZombieAI.cs" t="Include" />
           </e>
         </e>
+        <e p="Tests" t="Include">
+          <e p="TestDistanceToDynamicPosition.cs" t="Include" />
+          <e p="TestDistanceToStaticPosition.cs" t="Include" />
+          <e p="Tests.asmdef" t="Include" />
+        </e>
       </e>
       <e p="Base.csproj" t="IncludeRecursive" />
       <e p="LevelEditor.csproj" t="IncludeRecursive" />
@@ -78,6 +83,7 @@
       <e p="Packages" t="ExcludeRecursive" />
       <e p="SearchTemplate.sln" t="IncludeFlat" />
       <e p="Temp\Bin" t="ExcludeRecursive" />
+      <e p="Tests.csproj" t="IncludeRecursive" />
       <e p="UtilityAI.csproj" t="IncludeRecursive" />
     </e>
     <e p="C:\Users\Дима\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />

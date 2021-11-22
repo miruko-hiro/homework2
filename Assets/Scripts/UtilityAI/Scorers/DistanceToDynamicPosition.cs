@@ -11,6 +11,12 @@ namespace UtilityAI.Scorers
         [SerializeField] private float closeScore;
         [SerializeField] private float farScore;
 
+        public float CloseScore => closeScore;
+        public float FarScore => farScore;
+        public float MinDistance => minDistance;
+        public float MaxDistance => maxDistance;
+        public Vector3 DynamicPosition => transformEnemy.position;
+
         public override float GetScore()
         {
             var distance =  Vector3.Distance(transformOwn.position, transformEnemy.position);
