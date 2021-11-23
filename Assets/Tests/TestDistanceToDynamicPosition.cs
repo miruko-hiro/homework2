@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using Base.Game;
 using NUnit.Framework;
+using Scenes.Game.Scripts.Base.Game;
+using Scenes.Game.Scripts.UtilityAI.Scorers;
 using UnityEngine;
 using UnityEngine.TestTools;
-using UtilityAI.Scorers;
 
 namespace Tests
 {

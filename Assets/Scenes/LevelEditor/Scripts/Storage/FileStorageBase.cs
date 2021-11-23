@@ -56,6 +56,10 @@ namespace Scenes.LevelEditor.Scripts.Storage {
 			var thread = new Thread(() => LoadDataTaskThreaded(callback));
 			thread.Start();
 		}
+		private void LoadDataTaskThreaded(Action<GameData> callback) {
+			Load();
+			callback?.Invoke(Data);
+		}
 
 		protected override void ClearInternal()
 		{
@@ -64,9 +68,5 @@ namespace Scenes.LevelEditor.Scripts.Storage {
 			Data = gameDataByDefault;
 		}
 
-		private void LoadDataTaskThreaded(Action<GameData> callback) {
-			Load();
-			callback?.Invoke(Data);
-		}
 	}
 }

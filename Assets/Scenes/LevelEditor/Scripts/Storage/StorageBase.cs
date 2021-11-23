@@ -7,9 +7,9 @@ using UnityEngine;
 namespace Scenes.LevelEditor.Scripts.Storage {
 	public abstract class StorageBase {
 
-		public event Action OnStorageSaveStartedEvent;
-		public event Action OnStorageSaveCompleteEvent;
-		public event Action<GameData> OnStorageLoadedEvent;
+		// public event Action OnStorageSaveStartedEvent;
+		// public event Action OnStorageSaveCompleteEvent;
+		// public event Action<GameData> OnStorageLoadedEvent;
 
 		public static BinaryFormatter Formatter {
 			get {
@@ -36,24 +36,24 @@ namespace Scenes.LevelEditor.Scripts.Storage {
 		}
 
 		public void Save() {
-			OnStorageSaveStartedEvent?.Invoke();
+			//OnStorageSaveStartedEvent?.Invoke();
 			SaveInternal();
-			OnStorageSaveCompleteEvent?.Invoke();
+			//OnStorageSaveCompleteEvent?.Invoke();
 		}
 
 		protected abstract void SaveInternal();
 
 		public void SaveAsync(Action callback = null) {
-			OnStorageSaveStartedEvent?.Invoke();
+			//OnStorageSaveStartedEvent?.Invoke();
 			SaveAsyncInternal(callback);
-			OnStorageSaveCompleteEvent?.Invoke();
+			//OnStorageSaveCompleteEvent?.Invoke();
 		}
 
 		protected abstract void SaveAsyncInternal(Action callback = null);
 
 		public void Load() {
 			LoadInternal();
-			OnStorageLoadedEvent?.Invoke(Data);
+			//OnStorageLoadedEvent?.Invoke(Data);
 		}
 
 		protected abstract void LoadInternal();
@@ -61,7 +61,7 @@ namespace Scenes.LevelEditor.Scripts.Storage {
 		public void LoadAsync(Action<GameData> callback = null) {
 			LoadAsyncInternal(loadedData => {
 				callback?.Invoke(Data);
-				OnStorageLoadedEvent?.Invoke(Data);
+				//OnStorageLoadedEvent?.Invoke(Data);
 			});
 		}
 

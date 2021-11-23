@@ -19,18 +19,76 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="454a37b9-b065-4608-8eee-679af1a79d59" name="Default Changelist" comment="Добавлены unit тесты на DistanceToDynamicPosition и DistanceToStaticPosition">
+    <list default="true" id="454a37b9-b065-4608-8eee-679af1a79d59" name="Default Changelist" comment="Реализован полный функционал окна Level Editor">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SearchTemplate/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SearchTemplate/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SearchTemplate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SearchTemplate/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Wall2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Wall2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/LevelEditor.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/LevelEditor.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/Level.data" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/Level.data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/LevelEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/LevelEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/LevelMapNew.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/LevelMapNew.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Game/LevelMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Base/Game/LevelMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Game/ZombieComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Base/Game/ZombieComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/FileStorageBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/FileStorageBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/StorageBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/StorageBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Base.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Base.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/FollowCamera.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/FollowCamera.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Game.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Game/BulletController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Game/BulletController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Game/GameView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Game/GameView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Game/LevelMap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Game/LevelMap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Game/PlayerController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Game/PlayerController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Game/ZombieComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Game/ZombieComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Game/ZombieMap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Game/ZombieMap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/HitpointsView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/HitpointsView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Input.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Input/KeyboardInput.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Input/KeyboardInput.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Input/PlayerInput.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Input/PlayerInput.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Input/SimpleBotInput.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Input/SimpleBotInput.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Search.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Search/AIntelligence.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Search/AIntelligence.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Search/AStarBot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Search/AStarBot.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Search/AStarFromGoogle.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Search/AStarFromGoogle.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Search/Graph.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Search/Graph.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/BackToStartingPosition.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/BackToStartingPosition.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/BaseAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/BaseAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/EatGrass.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/EatGrass.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/RunningAwayFromEnemy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/RunningAwayFromEnemy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Score.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Score/ScoreKeeper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Score/ScoreKeeper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToDynamicPosition.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToDynamicPosition.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToStaticPosition.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToStaticPosition.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/Scorer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/Scorer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Utility AI.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Utility AI.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/ZombieAI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/ZombieAI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tests/TestDistanceToDynamicPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/TestDistanceToDynamicPosition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tests/TestDistanceToStaticPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/TestDistanceToStaticPosition.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,30 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Base/Game/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/BackToOwnPosition.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToEnemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/IScorer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/CloseToCover.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/IsInCover.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/EnemyNotSee.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToStartingPosition.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/AScorer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/Scorer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Base/Search/Graph.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/DodgingEnemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/HidingFromEnemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/BaseAction.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/BackToStartingPosition.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/EatGrass.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/RunningAwayFromEnemyOutdated.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/RunningAwayFromEnemyNew.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/RunningAwayFromEnemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Base/Game/LevelMapNew.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Base/Game/Walls.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Walls.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/WallsEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/WallsEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Attributes/LayerNameAttrubete.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Attributes/LayerNameAttribute.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/LayerNameAttributeEditor.cs" />
@@ -104,9 +138,7 @@
         <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/Surrogates/Vector3SerializationSurrogate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/FileStorage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/Storage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/StorageBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/GameData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/FileStorageBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Tests/TestSuite.cs" />
         <option value="$PROJECT_DIR$/Assets/Tests/TestDistanceToPosition.cs" />
         <option value="$PROJECT_DIR$/Assets/Tests/TestDistanceToDinamicPosition.cs" />
@@ -115,11 +147,37 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToStaticPosition.cs" />
         <option value="$PROJECT_DIR$/Assets/Tests/TestDistanceToStaticPosition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToDynamicPosition.cs" />
-        <option value="$PROJECT_DIR$/Assets/Tests/TestDistanceToDynamicPosition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/LevelMapNew.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Base/Game/ZombieComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Base/Game/LevelMap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/LevelEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Game/Scripts/Base/HitpointsView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Game/Scripts/Base/FollowCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Game/Scripts/Base/Search/AIntelligence.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Game/Scripts/Base/Search/AStarBot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Game/Scripts/Base/Search/AStarFromGoogle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Game/Scripts/Base/Search/Graph.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Game/Scripts/Base/Input/KeyboardInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Game/Scripts/Base/Input/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Game/Scripts/Base/Input/SimpleBotInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Game/Scripts/Base/Game/ZombieMap.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Game/Scripts/Base/Game/ZombieComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Game/Scripts/Base/Game/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Game/Scripts/Base/Game/LevelMap.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Game/Scripts/Base/Game/GameView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Game/Scripts/Base/Game/BulletController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Game/Scripts/UtilityAI/ZombieAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Game/Scripts/UtilityAI/Scorers/DistanceToDynamicPosition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Game/Scripts/UtilityAI/Scorers/DistanceToStaticPosition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Game/Scripts/UtilityAI/Scorers/Scorer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Game/Scripts/UtilityAI/Score/ScoreKeeper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Game/Scripts/UtilityAI/Actions/BackToStartingPosition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Game/Scripts/UtilityAI/Actions/BaseAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Game/Scripts/UtilityAI/Actions/EatGrass.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Game/Scripts/UtilityAI/Actions/RunningAwayFromEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Tests/TestDistanceToDynamicPosition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/FileStorageBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/StorageBase.cs" />
       </list>
     </option>
   </component>
@@ -175,7 +233,8 @@
       <workItem from="1637487158224" duration="22372000" />
       <workItem from="1637567971315" duration="9097000" />
       <workItem from="1637590747436" duration="10443000" />
-      <workItem from="1637653166748" duration="3263000" />
+      <workItem from="1637653166748" duration="4283000" />
+      <workItem from="1637673705840" duration="705000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit">
       <created>1636792840727</created>
@@ -226,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637602279796</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Реализован полный функционал окна Level Editor">
+      <created>1637656649005</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1637656649005</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +321,8 @@
     <MESSAGE value="Добавлено окно LevelEditor" />
     <MESSAGE value="В Level Editor добавлено сохранение префабов и загрузка" />
     <MESSAGE value="Добавлены unit тесты на DistanceToDynamicPosition и DistanceToStaticPosition" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлены unit тесты на DistanceToDynamicPosition и DistanceToStaticPosition" />
+    <MESSAGE value="Реализован полный функционал окна Level Editor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Реализован полный функционал окна Level Editor" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1637655265981">
@@ -266,10 +333,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="670" y="197" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1637506487021" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1637602285476">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1637656651924">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1637602285476" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1637656651924" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1637487501759">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
