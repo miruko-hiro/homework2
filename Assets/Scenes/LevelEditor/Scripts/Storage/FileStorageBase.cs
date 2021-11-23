@@ -63,7 +63,6 @@ namespace Scenes.LevelEditor.Scripts.Storage {
 
 		protected override void ClearInternal()
 		{
-			File.Exists(FilePath);
 			var gameDataByDefault = new GameData();
 			Data = gameDataByDefault;
 		}
