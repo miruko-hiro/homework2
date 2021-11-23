@@ -21,7 +21,7 @@ namespace Base.Game
         //
         // [SerializeField] private Vector3[] _deltaPath;
 
-        private int _currentPoint = 0;
+        // private int _currentPoint = 0;
         // private Vector3 _initPosition;
         
         public bool IsInCover { get; private set; }

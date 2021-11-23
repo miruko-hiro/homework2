@@ -15,7 +15,6 @@
                 <e p="LevelEditorUI.uxml" t="Include" />
               </e>
               <e p="LevelEditor.asmdef" t="Include" />
-              <e p="LevelMapNew.cs" t="Include" />
               <e p="Storage" t="Include">
                 <e p="FileStorageBase.cs" t="Include" />
                 <e p="GameData.cs" t="Include" />

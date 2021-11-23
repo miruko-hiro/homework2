@@ -19,12 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="454a37b9-b065-4608-8eee-679af1a79d59" name="Default Changelist" comment="Добавлено окно LevelEditor">
+    <list default="true" id="454a37b9-b065-4608-8eee-679af1a79d59" name="Default Changelist" comment="Добавлены unit тесты на DistanceToDynamicPosition и DistanceToStaticPosition">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SearchTemplate/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SearchTemplate/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SearchTemplate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SearchTemplate/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Wall2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Wall2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/LevelEditor.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/LevelEditor.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/Level.data" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/Level.data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToDynamicPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToDynamicPosition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToStaticPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToStaticPosition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/LevelEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/LevelEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/LevelMapNew.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/LevelMapNew.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Game/LevelMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Base/Game/LevelMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/Game/ZombieComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Base/Game/ZombieComponent.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,9 +69,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Score/ScoreKeeper.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Base/Game/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Base/Game/ZombieComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/BackToOwnPosition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToEnemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/IScorer.cs" />
@@ -86,7 +90,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Actions/RunningAwayFromEnemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Base/Game/LevelMapNew.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Base/Game/Walls.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/LevelMapNew.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Walls.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/WallsEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/WallsEditor.cs" />
@@ -104,16 +107,19 @@
         <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/StorageBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/GameData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Storage/FileStorageBase.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/LevelEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Tests/TestSuite.cs" />
         <option value="$PROJECT_DIR$/Assets/Tests/TestDistanceToPosition.cs" />
         <option value="$PROJECT_DIR$/Assets/Tests/TestDistanceToDinamicPosition.cs" />
-        <option value="$PROJECT_DIR$/Assets/Tests/TestDistanceToDynamicPosition.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToDynamicPosition.cs" />
         <option value="$PROJECT_DIR$/Assets/Tests/TestDistanceToPosition1.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/ZombieAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToStaticPosition.cs" />
         <option value="$PROJECT_DIR$/Assets/Tests/TestDistanceToStaticPosition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UtilityAI/Scorers/DistanceToDynamicPosition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Tests/TestDistanceToDynamicPosition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/LevelMapNew.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Base/Game/ZombieComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Base/Game/LevelMap.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/LevelEditor/Scripts/Editor/LevelEditor.cs" />
       </list>
     </option>
   </component>
@@ -168,7 +174,8 @@
       <workItem from="1637247288356" duration="674000" />
       <workItem from="1637487158224" duration="22372000" />
       <workItem from="1637567971315" duration="9097000" />
-      <workItem from="1637590747436" duration="10114000" />
+      <workItem from="1637590747436" duration="10443000" />
+      <workItem from="1637653166748" duration="3263000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit">
       <created>1636792840727</created>
@@ -212,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637579822649</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Добавлены unit тесты на DistanceToDynamicPosition и DistanceToStaticPosition">
+      <created>1637602279796</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1637602279796</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,17 +254,22 @@
     <MESSAGE value="Реализовано действие: убегание от врага, возращение на точку спавна и ожидание действия" />
     <MESSAGE value="Добавлено окно LevelEditor" />
     <MESSAGE value="В Level Editor добавлено сохранение префабов и загрузка" />
-    <option name="LAST_COMMIT_MESSAGE" value="В Level Editor добавлено сохранение префабов и загрузка" />
+    <MESSAGE value="Добавлены unit тесты на DistanceToDynamicPosition и DistanceToStaticPosition" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены unit тесты на DistanceToDynamicPosition и DistanceToStaticPosition" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1637655265981">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1637655265981" />
     <state x="670" y="197" key="RiderGenerateDialog" timestamp="1637506487021">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="670" y="197" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1637506487021" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1637579825742">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1637602285476">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1637579825742" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1637602285476" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1637487501759">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

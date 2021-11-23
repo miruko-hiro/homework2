@@ -17,6 +17,7 @@ namespace Scenes.LevelEditor.Scripts.Editor
 	    private string _pathPrefab = "";
 	    private Vector3 _position = Vector3.zero;
 	    private StorageBase _fileStorage;
+	    private bool _isParentSelected;
 
 	    [MenuItem("Window/Level Editor")]
         private static void ShowWindow()
@@ -53,6 +54,7 @@ namespace Scenes.LevelEditor.Scripts.Editor
             DrawSelectorPrefabs();
             DrawPosition();
             DrawButtonForAddingGameObject();
+            DrawButtonForDeleteGameObjects();
             
             EditorGUILayout.Space(20f);
             GUILayout.Label("Save Prefabs Positions From Parent", EditorStyles.boldLabel);
@@ -61,7 +63,7 @@ namespace Scenes.LevelEditor.Scripts.Editor
             GUILayout.Label("Load Prefabs Into Parent", EditorStyles.boldLabel);
             DrawButtonForLoadPrefabPositions();
         }
-        
+
         private void DrawParentGameObject()
         {
 	        EditorGUILayout.Space();
@@ -75,10 +77,14 @@ namespace Scenes.LevelEditor.Scripts.Editor
 	        if (_parent == null)
 	        {
 		        WarningMessageBox();
+		        _isParentSelected = false;
 		        _transformParent = null;
 	        }
 	        else
+	        {
+		        _isParentSelected = true;
 		        _transformParent = _parent.transform;
+	        }
         }
 
         private void WarningMessageBox()
@@ -174,7 +180,7 @@ namespace Scenes.LevelEditor.Scripts.Editor
 		private void DrawButtonForAddingGameObject() {
 			EditorGUILayout.Space(20f);
 			if (GUILayout.Button("Add Prefab To Scene", GUILayout.Height(30f))) {
-				if(_pathPrefab.Length < 0 || _parent == null) return;
+				if(_pathPrefab.Length < 0 || !_isParentSelected) return;
 				
 				Object o = AssetDatabase.LoadMainAssetAtPath(_pathPrefab);
 				GameObject go;
@@ -191,11 +197,25 @@ namespace Scenes.LevelEditor.Scripts.Editor
 			}
 		}
 
+		private void DrawButtonForDeleteGameObjects()
+		{
+			EditorGUILayout.Space(20f);
+			if (GUILayout.Button("Remove Game Objects From Scene", GUILayout.Height(30f))) {
+				if(!_isParentSelected) return;
+				
+				var count = _transformParent.childCount;
+				for (var i = count - 1; i >= 0; i--)
+				{
+					DestroyImmediate(_transformParent.GetChild(i).gameObject);
+				}
+			}
+		}
+
 		private void DrawButtonForSavePrefabPositions()
 		{
 			EditorGUILayout.Space(20f);
 			if (GUILayout.Button("Save prefabs positions", GUILayout.Height(30f))) {
-				if(_parent == null) return;
+				if(!_isParentSelected) return;
 
 				_fileStorage.Clear();
 				
@@ -217,7 +237,7 @@ namespace Scenes.LevelEditor.Scripts.Editor
 		{
 			EditorGUILayout.Space(20f);
 			if (GUILayout.Button("Load prefabs", GUILayout.Height(30f))) {
-				if(_parent == null) return;
+				if(!_isParentSelected) return;
 
 				_fileStorage.Load();
 				foreach (var pair in _fileStorage.Data.DataMap)
